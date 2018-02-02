@@ -1,4 +1,4 @@
-# Fullrate Online Coding Style Guide
+# Fullrate Online PHP Coding Style Guide
 
 This guide extends and expands on [PSR-1], the basic coding standard and
 [PSR-2], the coding style guide.
