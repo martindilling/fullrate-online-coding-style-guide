@@ -9,8 +9,8 @@ we agree on changes.
 
 ### Links
 
-[PHP Coding Style Guide]
-[Javascript Coding Style Guide]
+- [PHP Coding Style Guide]
+- [Javascript Coding Style Guide]
 
 [PHP Coding Style Guide]: php-coding-style-guide.md
 [Javascript Coding Style Guide]: js-coding-style-guide.md
