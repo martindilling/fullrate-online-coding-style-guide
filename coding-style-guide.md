@@ -3,6 +3,10 @@
 This guide extends and expands on [PSR-1], the basic coding standard and
 [PSR-2], the coding style guide.
 
+The changes to PSR-2 will be defined as the same number as the original
+PSR-2 document. Because of this the additions is starting from 8 to
+avoid any confusion.
+
 The intent of this guide is to reduce cognitive friction when scanning code
 from different authors. It does so by enumerating a shared set of rules and
 expectations about how to format PHP code.
