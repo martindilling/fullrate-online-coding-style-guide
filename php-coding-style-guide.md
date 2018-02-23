@@ -33,11 +33,15 @@ interpreted as described in [RFC 2119].
 - (change) Opening braces for methods MUST go on the **same** line, and closing braces MUST
   go on the next line after the body.
 
+- (append) A body of content MUST NOT have any linebreaks at the beginning or end.
+
 - (new) Variable names MUST be declared in snake_case.
 
 - (new) DocBlocks SHOULD always be defined for classes.
 
 - (new) DocBlocks MUST always be defined for fields and methods.
+
+- (new) Arrays MUST use the shorthand syntax.
 
 
 ### 1.1. Example
@@ -102,15 +106,6 @@ class ClassName
 ~~~
 
 
-### 2.5. (change) Keywords and True/False/Null
-
-PHP [keywords] MUST be in lower case.
-
-The PHP constants `TRUE`, `FALSE`, and `NULL` MUST be in **upper case**.
-
-[keywords]: http://php.net/manual/en/reserved.keywords.php
-
-
 ### 4.3. (change) Methods
 
 Visibility MUST be declared on all methods.
@@ -137,6 +132,15 @@ class ClassName
 	}
 }
 ~~~
+
+
+### 5. (append) Control Structures
+
+* The body MUST be on the next line after the opening brace
+* The closing brace MUST be on the next line after the body
+
+Avoiding line breaks at the start and end of a body of content helps
+visually grouping the blocks of code.
 
 
 ### 8. (new) Variable naming
@@ -332,6 +336,22 @@ class ClassName
 	 */
 	public $users;
 }
+~~~
+
+
+### 10. Arrays
+
+Arrays MUST use the shorthand syntax.
+
+Defining arrays MUST NOT have spaces between the brackets and the content.
+
+~~~php
+<?php
+$foo = ['foo', 'bar'];
+
+// Do NOT do this:
+// $foo = array( 'foo', 'bar' );
+// $foo = [ 'foo', 'bar' ];
 ~~~
 
 
